@@ -1,0 +1,12 @@
+1.A API ViaCEP foi implementada na página cadastro.js utilizando a função fetch, que realiza uma requisição para o endpoint https://viacep.com.br/ws/${cep}/json/, onde ${cep} é o CEP digitado pelo usuário. O sistema inclui uma validação prévia para garantir que o CEP tenha exatamente 8 dígitos, evitando requisições inválidas. Caso o CEP não seja encontrado ou ocorra algum erro na requisição, mensagens de alerta são exibidas para o usuário. Quando a consulta é bem-sucedida, os campos de endereço (rua, bairro, cidade e estado) são preenchidos automaticamente com os dados retornados pela API, facilitando o preenchimento do formulário.
+
+2- A imagem aleatória do perfil foi gerada utilizando o serviço do Picsum Photos por meio do link https://picsum.photos/160/160, com um parâmetro de query random que recebe o nome do usuário codificado para garantir que cada usuário tenha uma imagem diferente.
+
+3 -Eu utilizei o localStorage para armazenar os dados do cadastro do usuário, permitindo que essas informações persistam entre páginas. Ao salvar os dados do usuário (como nome, email, endereço, etc.) em formato JSON, eles ficam disponíveis para serem recuperados posteriormente.
+
+4 -Organizei a interface utilizando abas (tabs) estilizadas com CSS, permitindo que cada seção de informações — cadastro, lista de voluntários e dados pessoais — seja exibida de forma separada. Isso proporciona uma navegação intuitiva, onde o usuário pode alternar facilmente entre as diferentes áreas, mantendo a interface limpa e organizada.
+
+5- O sistema de login foi implementado em um arquivo JavaScript separado que valida as credenciais do usuário comparando-as com os dados armazenados no localStorage. Ao carregar a página de login, o script verifica se já existe um usuário logado (dados no localStorage) e, caso positivo, redireciona automaticamente para a página do usuário, evitando que ele tenha que fazer login novamente.
+
+Durante o envio do formulário de login, o código captura o nome de usuário e a senha inseridos, compara com os dados salvos no localStorage e, se coincidir, permite o acesso redirecionando para a página do usuário. Caso contrário, exibe uma mensagem de erro indicando que as credenciais estão incorretas.
+
