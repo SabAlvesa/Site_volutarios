@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ecf0f3, #e0eafc);
+    color: #2c3e50;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    max-width: 1000px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .presentation {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .presentation h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .presentation p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .presentation img {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+ 
+  .login-form {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  
+  .login-form h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #2980b9;
+  }
+  
+  .login-form input {
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .login-form input:focus {
+    border-color: #2980b9;
+    outline: none;
+  }
+  
+  .login-form button {
+    padding: 12px 16px;
+    background-color: #2980b9;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-form button:hover {
+    background-color: #1f6fa5;
+  }
+  
+  .login-form p {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .login-form a {
+    color: #2980b9;
+    text-decoration: none;
+  }
+  
+  .login-form a:hover {
+    text-decoration: underline;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .presentation img {
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Página do Usuário</title>
+  <link rel="stylesheet" href="assets/css/usuario.css" />
+</head>
+<body>
+
+  <div class="sidebar">
+    <a href="index.html">🏠 Menu Principal</a>
+    <a href="#" id="logout-btn">🚪 Sair</a>
+  </div>
+
+  <main>
+    <div class="tabs">
+      <div class="tab active" data-tab="welcome">Cadastro de voluntário</div>
+      <div class="tab" data-tab="lista">Lista de voluntários</div>
+      <div class="tab" data-tab="dados">Dados Pessoais</div>
+    </div>
+
+    
+    <div id="welcome" class="tab-content active">
+      <h2>Bem-vindo(a), <span id="user-fullname"></span>!</h2>
+      <img id="user-photo" alt="Foto de perfil" />
+
+      <button id="delete-account-btn" class="btn btn-danger">Excluir meu cadastro</button>
+
+    </div>
+
+    
+    <div id="lista" class="tab-content">
+      <h2>Voluntários cadastrados</h2>
+    
+      
+      <input
+        type="text"
+        id="filter-input"
+        placeholder="Filtrar voluntários pelo nome..."
+        style="padding: 8px; margin-bottom: 15px; width: 100%; max-width: 400px;"
+      />
+    
+      
+      <button id="clear-all-btn" class="btn btn-danger" style="margin-bottom: 15px;">
+        Limpar todos os cadastros
+      </button>
+    
+     
+      <ul id="volunteer-ul"></ul>
+    </div>
+    
+
+    
+    <div id="dados" class="tab-content">
+      <h2>Seus dados pessoais</h2>
+      <p><strong>Nome:</strong> <span id="user-name"></span></p>
+      <p><strong>E-mail:</strong> <span id="user-email"></span></p>
+      <p><strong>Endereço:</strong> <span id="user-address"></span></p>
+    </div>
+  </main>
+
+  <script src="assets/js/usuario.js"></script>
+</body>
+</html>
+
